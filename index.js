@@ -251,7 +251,7 @@ export default class Pdf extends Component {
         })
             .fetch(
                 source.method ? source.method : 'GET',
-                source.uri,
+                encodeURI(source.uri),
                 source.headers ? source.headers : {},
                 source.body ? source.body : ""
             )
